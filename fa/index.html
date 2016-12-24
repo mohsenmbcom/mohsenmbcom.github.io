@@ -35,14 +35,19 @@
                     <span class="grey-text text-lighten-5">mohsen</span><span
                         class="grey-text text-lighten-2">mb</span><span class="grey-text text-lighten-3">com</span>
                 </a>
+                <a href="#" data-activates="mobile-menu" class="button-collapse"><i class="zmdi zmdi-menu"></i></a>
                 <ul class="left hide-on-med-and-down">
-                    <li class="active"><a onclick="return false;" href="./../fa">فارسی</a></li>
+                    <li class="active"><a onclick="return false;" href="./">فارسی</a></li>
                     <li><a href="./../">English</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 </div>
+<ul class="side-nav" id="mobile-menu" dir="ltr">
+    <li class="active"><a onclick="return false;" href="./">فارسی</a></li>
+    <li><a href="./../">English</a></li>
+</ul>
 <div class="container">
     <br>
     <div class="row">
@@ -79,6 +84,7 @@
 </div>
 <script>
     $(document).ready(function () {
+        $(".button-collapse").sideNav();
         $('.tooltipped').tooltip({delay: 50});
     });
 </script>
