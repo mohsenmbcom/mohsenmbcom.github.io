@@ -56,16 +56,22 @@
                 </div>
                 <div class="card-action">
 
-                    <a class="btn-floating small waves-effect waves-light deep-orange"
-                       href="mailto:me@mohsenmb.com"><i class="zmdi zmdi-email"></i></a>
-                    <a class="btn-floating small waves-effect waves-light deep-orange"
-                       href="https://twitter.com/mohsenmbcom"><i class="zmdi zmdi-twitter"></i></a>
-                    <a class="btn-floating small waves-effect waves-light deep-orange"
-                       href="https://github.com/mohsenmbcom"><i class="zmdi zmdi-github"></i></a>
+                    <a class="btn-floating small waves-effect waves-light deep-orange tooltipped"
+                       href="mailto:me@mohsenmb.com" data-position="top" data-delay="50" data-tooltip="My E-Mail" target="_blank"><i class="zmdi zmdi-email"></i></a>
+                    <a class="btn-floating small waves-effect waves-light deep-orange tooltipped"
+                       href="https://twitter.com/mohsenmbcom" data-position="top" data-delay="50" data-tooltip="My Twitter" target="_blank"><i class="zmdi zmdi-twitter"></i></a>
+                    <a class="btn-floating small waves-effect waves-light deep-orange tooltipped"
+                       href="https://github.com/mohsenmbcom" data-position="top" data-delay="50" data-tooltip="My GitHub" target="_blank"><i class="zmdi zmdi-github"></i></a>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+<script>
+    $(document).ready(function(){
+        $('.tooltipped').tooltip({delay: 50});
+    });
+</script>
 </body>
 </html>
